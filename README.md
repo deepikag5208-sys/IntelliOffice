@@ -1,153 +1,180 @@
 # 🏢 IntelliOffice (OfficeGen AI) — Intelligent Enterprise Management System
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=flat-square&logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Build_Tool-Vite_5-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
-[![TailwindCSS](https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
-[![Google Gemini](https://img.shields.io/badge/AI_Engine-Gemini_Pro-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/deepikag5208-sys/IntelliOffice)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Build_Tool-Vite_5-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![Google Gemini](https://img.shields.io/badge/AI_Engine-Gemini_Flash-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
-**IntelliOffice** is an AI-powered, full-stack Enterprise Office Management System featuring a futuristic glassmorphic UI, real-time workspace analytics, automated workflow trackers, role-based security, and an intelligent **Natural Language AI Assistant** with retrieval-augmented database context (RAG).
-
----
-
-## 🌟 Key Features
-
-### 📊 Executive Workspace & Dashboard
-- **Real-Time KPI Cards**: Live telemetry tracking Total Staff, Daily Attendance %, Pending Leaves, Active Tasks, Upcoming Meetings, and Broadcasts.
-- **Interactive Analytics**: Attendance bar charts and task distribution donut charts powered by `Recharts`.
-- **Micro-Animations & Glassmorphism**: Glowing background ambient mesh lights, smooth hover lifts, staggered card entrances, and responsive dark theme styling.
-
-### 🤖 RAG-Enabled Office AI Assistant
-- **Natural Language Query Engine**: Ask complex questions like *"What are my pending tasks?"*, *"How many leave days do I have remaining?"*, or *"Show today's meetings"*.
-- **Database Context Aware**: Fetches live data from SQLite/SQLAlchemy models dynamically to generate precise context-backed responses.
-
-### 👥 Staff Directory & Employee Management
-- **Role-Based Profiles**: Manage Admin, Manager, and Employee accounts with role permissions.
-- **Directory Search & Filter**: Instant search by employee name, ID code (`EMP-001`), designation, or department.
-
-### ⏱️ Attendance & Check-In Punch Clock
-- **One-Click Check-In / Check-Out**: Live status updates (`Present`, `Late`, `Absent`) with working hour duration tracking.
-- **Attendance Logs**: Daily check-in timestamps and department-wide presence summaries.
-
-### 🌴 Leave Management & Approval Pipeline
-- **Request Workflows**: Submit Casual, Sick, or Paid Leave requests with custom date ranges and descriptions.
-- **Manager Approval Hub**: One-click Approve or Reject actions with real-time balance calculations.
-
-### 📋 Task Management & Kanban Board
-- **Visual Pipeline**: Drag-free Kanban status columns (`To Do`, `In Progress`, `Completed`).
-- **Priority Indicators**: Urgent, High, Medium, and Low badge tags with employee assignment tracking.
-
-### 📅 Meeting Scheduler & Video Launcher
-- **Calendar Booking**: Create board meetings, set start/end times, and assign participants.
-- **Direct Link Launch**: Quick-join buttons for Google Meet, Zoom, or Teams links.
-
-### 📢 Office Announcements & Notices
-- **Broadcast Stream**: Priority notice board (`Urgent` / `Normal`) for company-wide policy updates and alerts.
-
-### 📁 Document Catalog & Report Generation
-- **Document Management**: File upload catalog, PDF handbook viewing, and instant downloads.
-- **Executive Analytics Reports**: Comprehensive metric aggregation with **CSV Export** and printable PDF layout.
+**IntelliOffice** is a modern, full-stack Enterprise Office Management System powered by **FastAPI**, **React 18**, and **Google Gemini AI**. It combines automated corporate workflows, role-based access control, interactive data visualization, and an intelligent **Natural Language RAG (Retrieval-Augmented Generation) AI Assistant** with a responsive glassmorphic dark UI.
 
 ---
 
-## 🛠️ Technology Stack
+## 📸 Key Highlights & Features
 
-| Layer | Technology |
+### 📊 1. Executive Telemetry & Live Dashboard
+- **Real-Time KPI Metric Cards**: Live tracking of Total Employees, Daily Attendance %, Pending Leave Requests, Open Tasks, Upcoming Meetings, and Broadcasts.
+- **Interactive Analytics Visualizations**: Daily attendance trends and task priority distributions built with `Recharts`.
+- **Glassmorphic UI**: Ambient mesh gradient lighting, smooth card elevations, and responsive dark theme styling.
+
+### 🤖 2. RAG-Enabled Natural Language AI Assistant
+- **Context-Aware Database Retrieval**: Answers questions like *"What are my pending tasks?"*, *"How many leaves do I have?"*, or *"Show today's meetings"* by retrieving live records from SQLite/SQLAlchemy.
+- **Dual-Mode Engine**: Powered by Google Gemini (`gemini-1.5-flash`) with an instant built-in local fallback synthesis engine.
+- **Role Boundary Enforcement**: Respects user permissions (Employees only access their own private data, while Admins/Managers access organization metrics).
+
+### 👥 3. Staff Directory & Role-Based Profiles
+- **Three-Tier Role Security**: Dedicated permissions for **Admin**, **Manager**, and **Employee**.
+- **Real-time Filter & Search**: Instant lookup by employee name, employee code (`EMP-001`), designation, or department.
+
+### ⏱️ 4. Attendance Tracker & Punch Clock
+- **One-Click Check-In / Check-Out**: Status calculations (`Present`, `Late`, `Absent`) and live duration computation.
+- **Attendance History Logs**: Detailed daily punch logs and department presence summaries.
+
+### 🌴 5. Leave Management & Approval Hub
+- **Employee Request Submission**: Casual, Sick, and Paid leave requests with date range pickers and reason notes.
+- **Manager Review System**: Approve or Reject requests with live balance deductions.
+
+### 📋 6. Task Management & Kanban Board
+- **Visual Task Pipeline**: Status columns (`To Do`, `In Progress`, `Completed`).
+- **Priority Badging**: Urgent, High, Medium, and Low tags with assignee metadata and due dates.
+
+### 📅 7. Meeting Scheduler & Video Launcher
+- **Meeting Organization**: Schedule board meetings, set start/end times, and assign participants.
+- **One-Click Join**: Quick launcher for Google Meet, Zoom, or Microsoft Teams links.
+
+### 📢 8. Office Announcements & Broadcasts
+- **Notice Board**: High-priority alert banner and company-wide notifications.
+
+### 📁 9. Document Catalog & Executive Reports
+- **Document Management**: File upload catalog and download portal for company handbooks and policies.
+- **Exportable Analytics**: Aggregated system reporting with instant **CSV Export** and printable summary layouts.
+
+---
+
+## 🛠️ Technology Stack & Architecture
+
+```mermaid
+graph TD
+    User([User Browser]) <-->|HTTP / JSON / Vite Proxy| FE[React 18 + Vite Frontend]
+    FE <-->|REST API + JWT Auth| BE[FastAPI Backend Server]
+    BE <-->|SQLAlchemy ORM| DB[(SQLite / MySQL Database)]
+    BE <-->|Retrieval Context + Query| AI[Google Gemini API / Fallback RAG]
+```
+
+| Layer | Technologies Used |
 | :--- | :--- |
-| **Frontend Framework** | React 18 (Vite 5, JavaScript ES6+) |
-| **Styling & Icons** | Tailwind CSS v3, Glassmorphism design system, Lucide React |
+| **Frontend UI** | React 18, Vite 5, React Router v6, Tailwind CSS v3, Lucide Icons |
 | **Data Visualization** | Recharts |
-| **Backend API** | Python 3.9+, FastAPI, Uvicorn |
-| **Database & ORM** | SQLAlchemy 2.0, SQLite (MySQL Ready) |
-| **Authentication** | OAuth2 Password Bearer, JWT (JSON Web Tokens), Passlib Bcrypt |
-| **AI Integration** | Google Generative AI (`google-generativeai` / Gemini API) |
+| **Backend REST API** | Python 3.9+, FastAPI, Uvicorn, Pydantic v2 |
+| **Database & ORM** | SQLAlchemy 2.0, SQLite (MySQL-ready via PyMySQL) |
+| **Authentication & Security** | OAuth2 Password Bearer, JWT (JSON Web Tokens), Passlib Bcrypt |
+| **AI / NLP Engine** | Google Generative AI (Gemini 1.5 Flash) + Local RAG Synthesizer |
 
 ---
 
 ## 🚀 Quick Start Guide
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18 or higher)
 - [Python](https://www.python.org/) (v3.9 or higher)
+- [Node.js](https://nodejs.org/) (v18 or higher) & `npm`
 
 ---
 
-### 1️⃣ Backend Setup
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/deepikag5208-sys/IntelliOffice.git
+cd IntelliOffice
+```
+
+---
+
+### 2️⃣ Backend Setup (FastAPI)
 
 ```bash
 # Navigate to backend directory
 cd backend
 
-# Install Python dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# Start FastAPI development server (Runs on http://localhost:8000)
+# Start the FastAPI server (Runs on http://localhost:8000)
 python run.py
 ```
 
-*Interactive API documentation is available at `http://localhost:8000/docs`.*
+- **API Base URL**: `http://localhost:8000`
+- **Swagger Interactive Docs**: `http://localhost:8000/docs`
+- **Redoc Documentation**: `http://localhost:8000/redoc`
+
+*(Optional) Configure Gemini API key by creating a `backend/.env` file:*
+```env
+GEMINI_API_KEY=your_google_gemini_api_key_here
+```
 
 ---
 
-### 2️⃣ Frontend Setup
+### 3️⃣ Frontend Setup (React + Vite)
 
 ```bash
-# Navigate to frontend directory
+# In a new terminal, navigate to frontend directory
 cd frontend
 
 # Install Node modules
 npm install
 
-# Start Vite live server (Runs on http://localhost:3000)
+# Start Vite live development server (Runs on http://localhost:3000)
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+- **Frontend Application**: `http://localhost:3000`
 
 ---
 
 ## 🔐 Demo Credentials
 
-Use any of the pre-configured demo accounts to explore role-specific permissions:
+Use any of the pre-configured accounts to explore role-specific permissions:
 
-| Role | Email | Password | Access Level |
+| Role | Email | Password | Permissions |
 | :--- | :--- | :--- | :--- |
-| **Admin** | `admin@office.com` | `admin123` | Full System Control (Employees, Reports, Settings) |
-| **Manager** | `manager@office.com` | `manager123` | Department Management (Leaves, Tasks, Meetings) |
-| **Employee** | `employee@office.com` | `employee123` | Personal Dashboard, Check-In, Tasks, AI Assistant |
+| 🛡️ **Admin** | `admin@office.com` | `admin123` | Full access: Employees, Reports, System Settings, Tasks, Leaves |
+| 👔 **Manager** | `manager@office.com` | `manager123` | Department Management: Approve/Reject Leaves, Tasks, Meetings |
+| 👤 **Employee** | `employee@office.com` | `employee123` | Personal Dashboard, Check-In/Out, My Tasks, AI Assistant |
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```text
 IntelliOffice/
 ├── backend/
 │   ├── app/
-│   │   ├── routes/          # FastAPI REST Endpoints (auth, employees, attendance, AI, etc.)
-│   │   ├── services/        # AI Service (Gemini RAG) & Seed Data
-│   │   ├── auth.py          # JWT Token verification & password hashing
-│   │   ├── database.py      # SQLAlchemy DB session setup
-│   │   ├── models.py        # Database entities (User, Attendance, Task, Meeting, etc.)
-│   │   └── schemas.py       # Pydantic request/response validation
-│   ├── uploads/             # Static documents and handbooks
-│   ├── requirements.txt     # Python package requirements
-│   └── run.py               # Application entry point
+│   │   ├── routes/              # REST Endpoints (auth, employees, attendance, AI, tasks...)
+│   │   ├── services/            # AI RAG Service & automatic Database Seeder
+│   │   ├── auth.py              # JWT authentication & password hashing
+│   │   ├── config.py            # Environment & Pydantic application settings
+│   │   ├── database.py          # SQLAlchemy engine & session factory
+│   │   ├── models.py            # Database tables (Users, Attendance, Tasks, etc.)
+│   │   └── schemas.py           # Pydantic schema validation
+│   ├── uploads/                 # Static document uploads directory
+│   ├── requirements.txt         # Python dependencies
+│   └── run.py                   # FastAPI server entry point
 ├── frontend/
 │   ├── src/
-│   │   ├── components/      # Header, Sidebar, StatCard, Modal, ProtectedRoute
-│   │   ├── context/         # AuthContext state management
-│   │   ├── pages/           # Dashboard, Employees, Tasks, AI Assistant, etc.
-│   │   ├── services/        # Axios API client instance
-│   │   ├── App.jsx          # Router & layout mesh wrapper
-│   │   └── index.css        # Keyframe animations & glassmorphism utilities
-│   ├── package.json
-│   └── vite.config.js
-└── README.md
+│   │   ├── components/          # Reusable UI components (Sidebar, Header, StatCard, Modals)
+│   │   ├── context/             # AuthContext provider
+│   │   ├── pages/               # Views (Dashboard, Staff, Attendance, Tasks, AI Assistant)
+│   │   ├── services/            # Axios API client
+│   │   ├── App.jsx              # Routing & root layout wrapper
+│   │   └── index.css            # Custom CSS & glassmorphic styling
+│   ├── package.json             # NPM package definitions
+│   ├── tailwind.config.js       # Tailwind CSS theme configuration
+│   └── vite.config.js           # Vite server & API proxy config
+└── README.md                    # Project documentation
 ```
 
 ---
 
 ## 📜 License
 
-Distributed under the MIT License. See `LICENSE` for details.
+Distributed under the **MIT License**. Feel free to use and modify for enterprise or personal projects.
